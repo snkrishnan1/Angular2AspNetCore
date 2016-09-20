@@ -1,0 +1,108 @@
+﻿
+<div class="container-fluid">
+    <section class="container">
+        <div class="container-page">
+            <div style="float:left">
+                <div class="col-md-6" style="padding-left:0px !important; float:left;">
+                    <div class="form-group col-lg-4">
+                        <label>Extractor ID</label>
+                        <input type="text" class="form-control" id="txtQueueID" [(ngModel)]="ExtractorData.extractorId" />
+                    </div>
+                    <div class="form-group col-lg-8">
+                        <label>Name</label>
+                        <input type="text" class="form-control" id="txtCurrentStatus" [(ngModel)]="ExtractorData.name" />
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label>Customer</label>
+                        <input type="text" class="form-control" id="txtApplicationName" [(ngModel)]="ExtractorData.customerId" />
+                    </div>
+
+                    <div class="form-group col-lg-4">
+                        <label>Application</label>
+                        <input type="text" class="form-control" id="txtLastUpdatedSize" [(ngModel)]="ExtractorData.applicationName" />
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label>Verbose Tracing</label>
+                        <input type="text" class="form-control" id="txtApplicationName" [(ngModel)]="ExtractorData.verboseTracing" />
+                    </div>
+
+                    <div class="form-group col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong>Connection Info</strong>
+                            </div>
+                            <div class="panel-body">
+
+                                <div class="form-group col-lg-12">
+                                    <label>Data Source</label>
+                                    <input type="text" class="form-control" id="txtDataSource" [(ngModel)]="ExtractorData.dataSource" />
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Driver/DSN</label>
+                                    <input type="text" class="form-control" id="txtDriverOrDSNName" [(ngModel)]="ExtractorData.driverOrDSNName" />
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Server</label>
+                                    <input type="text" class="form-control" id="txtServer" [(ngModel)]="ExtractorData.server" />
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>User Name</label>
+                                    <input type="text" class="form-control" id="txtUserName" [(ngModel)]="ExtractorData.userName" />
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Password</label>
+                                    <input type="text" class="form-control" id="txtPassword" [(ngModel)]="ExtractorData.password" />
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Database</label>
+                                    <input type="text" class="form-control" id="txtDatabase" [(ngModel)]="ExtractorData.database" />
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Other Params</label>
+                                    <input type="text" class="form-control" id="txtOtherConnectParams" [(ngModel)]="ExtractorData.otherConnectParams" />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6" style="float:right !important">
+
+                    <div>
+                        <label>Description</label>
+                        <textarea class="form-control" type="textarea" id="txtDescription" [(ngModel)]="ExtractorData.description" placeholder="Description" maxlength="140" rows="7"></textarea>
+                    </div>
+
+                    <div>
+                        <label>Dataset File</label>
+                        <input type="text" class="form-control" id="txtDataSetFilePath" [(ngModel)]="ExtractorData.dataSetFilePath" />
+                    </div>
+                    <div>
+                        <label>Last Updated</label>
+                        <input type="text" name="" class="form-control" [(ngModel)]="ExtractorData.lastUpdatedDate" id="txtlastUpdatedDate" />
+                    </div>
+                    <div>
+                        <label>Data Size</label>
+                        <input type="text" name="" class="form-control" [(ngModel)]="ExtractorData.lastUpdatedSize" id="txtlastUpdatedSize" />
+                    </div>
+                    <div>
+                        <label>Created By</label>
+                        <input type="text" class="form-control" id="txtcreatedBy" [(ngModel)]="ExtractorData.createdBy" />
+                    </div>
+                    <div>
+                        <label>Created On</label>
+                        <input type="text" class="form-control" id="txtcreatedOn" [(ngModel)]="ExtractorData.createdOn" />
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div>
+                        <label>Script Code</label>
+                        <textarea class="form-control" type="textarea" id="txtScriptCode" [(ngModel)]="ExtractorData.scriptCode" placeholder="scriptCode" maxlength="140" rows="7"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

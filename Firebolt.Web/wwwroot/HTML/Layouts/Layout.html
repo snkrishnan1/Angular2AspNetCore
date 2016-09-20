@@ -1,0 +1,36 @@
+﻿<div class="container-fluid">
+    <!--open container-->
+    <div class="row row-offcanvas row-offcanvas-left">
+        <!--open row-->
+        <div id="nav-section" style="padding-right:0px !important">
+
+            <!-- Telerik Menu starts -->
+
+            <User-Profile></User-Profile>
+            <br />
+            <!--<Application-List (applications)="applications"></Application-List>-->
+            <div class="parent">
+                <Application-List [applications]="applications" [selected]="selectedApplication"  (selectChange)="getSelectedApplication($event)"></Application-List>
+                <!--SelectedApplication: {{selectedApplication}}-->
+                <!--loggedInUser:{{loggedInUser}}-->
+            </div>
+            <br />
+            <Left-Menu></Left-Menu>
+        <!--<div #LeftMenu></div>-->
+
+            <!-- Telerik Menu ends -->
+
+        </div><!--close left column-->
+        <div id="main-section" style="padding-left:0px !important; padding-top:0px !important;">
+            <!--open main column-->
+            <!-- top bar begins -->
+            <!--<menu-top-bar></menu-top-bar>-->
+            <!-- top bar end -->
+
+            <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:white;width:100%; height:100%;">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <!--close main column-->
+    </div><!--close row-->
+</div>

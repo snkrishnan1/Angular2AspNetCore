@@ -1,0 +1,27 @@
+﻿<!--<li *ngFor="let group of reportGroupList | componentTypeFilter : 'Report'">
+    <ul>
+        <li class="teamMate" (click)="onSelect(group.reportGroupH1)">
+            <a><h4>{{group.reportGroupH1}}</h4></a>
+        </li>
+    </ul>
+</li>-->
+<li>
+    <h2>
+        <i class="fa fa-home">
+            <span style="padding-left:4px;">
+                Reports
+            </span>
+        </i>
+    </h2>
+    <ul>
+        <li *ngFor="let group of reportGroupList | filter:{componentType : 'Report'}" class="teamMate" (click)="onSelect(group.reportGroupH1)">
+            <a><h4>{{group.reportGroupH1}}</h4></a>
+        </li>
+        <!--<li class="teamMate">
+            <a [routerLink]="['Dashboard1']"><h4>Dashboards 1</h4></a>
+        </li>
+        <li class="teamMate">
+            <a [routerLink]="['Dashboard2']"><h4>Dashboards 2</h4></a>
+        </li>-->
+    </ul>
+</li>

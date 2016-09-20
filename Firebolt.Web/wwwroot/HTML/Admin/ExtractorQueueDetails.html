@@ -1,0 +1,112 @@
+﻿<div class="container-fluid">
+    <section class="container">
+        <div class="container-page">
+            <div style="float:left">
+                <div class="col-md-6" style="padding-left:0px !important; float:left;">
+                    <div class="form-group col-lg-4">
+                        <label>Queue ID</label>
+                        <input type="text" class="form-control" id="txtQueueID" [(ngModel)]="ExtractorQueueData.queueId" />
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label>Current Status</label>
+                        <input type="text" class="form-control" id="txtCurrentStatus" [(ngModel)]="ExtractorQueueData.currentStatus" />
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label>Application</label>
+                        <input type="text" class="form-control" id="txtApplicationName" [(ngModel)]="ExtractorQueueData.applicationName" />
+                    </div>
+
+                    <div class="form-group col-lg-4">
+                        <label>Data Size</label>
+                        <input type="text" class="form-control" id="txtLastUpdatedSize" [(ngModel)]="ExtractorQueueData.lastUpdatedSize" />
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label>Last Updated</label>
+                        <input type="text" class="form-control" id="txtApplicationName" [(ngModel)]="ExtractorQueueData.lastUpdatedDate" />
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label>Customer</label>
+                        <input type="text" class="form-control" id="txtCustomerId" [(ngModel)]="ExtractorQueueData.customerId" />
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong>Connection Info</strong>
+                            </div>
+                            <div class="panel-body">
+
+                                <div class="form-group col-lg-12">
+                                    <label>Data Source</label>
+                                    <input type="text" class="form-control" id="txtDataSource" [(ngModel)]="ExtractorQueueData.dataSource" />
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Driver/DSN</label>
+                                    <input type="text" class="form-control" id="txtDriverOrDSNName" [(ngModel)]="ExtractorQueueData.driverOrDSNName" />
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Server</label>
+                                    <input type="text" class="form-control" id="txtServer" [(ngModel)]="ExtractorQueueData.server" />
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>User Name</label>
+                                    <input type="text" class="form-control" id="txtUserName" [(ngModel)]="ExtractorQueueData.userName" />
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Password</label>
+                                    <input type="text" class="form-control" id="txtPassword" [(ngModel)]="ExtractorQueueData.password" />
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Database</label>
+                                    <input type="text" class="form-control" id="txtDatabase" [(ngModel)]="ExtractorQueueData.database" />
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label>Other Params</label>
+                                    <input type="text" class="form-control" id="txtOtherConnectParams" [(ngModel)]="ExtractorQueueData.otherConnectParams" />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6" style="float:right !important">
+                    <div class="form-group col-lg-12">
+                        <label>Name</label>
+                        <input type="text" name="" class="form-control" id="txtName" [(ngModel)]="ExtractorQueueData.name" />
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Description</label>
+                        <textarea class="form-control" type="textarea" id="txtDescription" [(ngModel)]="ExtractorQueueData.description" placeholder="Description" maxlength="140" rows="7"></textarea>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Error Text</label>
+                        <textarea class="form-control" type="textarea" id="txtErrorText" [(ngModel)]="ExtractorQueueData.errorText" placeholder="Error Text" maxlength="140" rows="14"></textarea>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label>Dataset File</label>
+                        <input type="text" class="form-control" id="txtDataSetFilePath" [(ngModel)]="ExtractorQueueData.dataSetFilePath" />
+                    </div>
+                    <div>
+                        <label>Added Date</label>
+                        <input type="text" name="" class="form-control" [(ngModel)]="ExtractorQueueData.addedDate" id="txtAddedDate" />
+                    </div>
+                    <div>
+                        <label>Extractor ID</label>
+                        <input type="text" name="" class="form-control" [(ngModel)]="ExtractorQueueData.extractorId" id="txtExtractorId" />
+                    </div>
+                    <div>
+                        <label>Schedule ID</label>
+                        <input type="text" class="form-control" id="txtScheduleId" [(ngModel)]="ExtractorQueueData.scheduleId" />
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group col-lg-12">
+                        <label>Script Code</label>
+                        <textarea class="form-control" type="textarea" id="txtScriptCode" [(ngModel)]="ExtractorQueueData.scriptCode" placeholder="scriptCode" maxlength="140" rows="7"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

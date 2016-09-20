@@ -1,0 +1,9 @@
+﻿<div style="padding-left:20px;">
+    <div class="child">
+        <select (change)="onChange($event)">
+            <option *ngFor="let app of applications" [value]="selected">
+                {{app.application}}
+            </option>
+        </select>
+    </div>
+</div>
