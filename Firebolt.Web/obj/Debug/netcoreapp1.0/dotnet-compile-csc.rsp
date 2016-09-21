@@ -7,8 +7,8 @@
 -debug:full
 -nostdlib
 -nologo
-"C:\Krishnan\Working\GitHub\Angular2\Firebolt.Web\src\Firebolt.Web\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"C:\Krishnan\Working\GitHub\Angular2\Firebolt.Web\src\Firebolt.Web\bin\Debug\netcoreapp1.0\Firebolt.Web.dll"
+"C:\Krishnan\Working\GitHub\Angular2AspNetCore\Angular2AspNetCore\src\Firebolt.Web\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Krishnan\Working\GitHub\Angular2AspNetCore\Angular2AspNetCore\src\Firebolt.Web\bin\Debug\netcoreapp1.0\Firebolt.Web.dll"
 -r:"C:\Users\Krishnan\.nuget\packages\Microsoft.AspNetCore.Hosting\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.dll"
 -r:"C:\Users\Krishnan\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Abstractions.dll"
 -r:"C:\Users\Krishnan\.nuget\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll"
@@ -116,6 +116,6 @@
 -r:"C:\Users\Krishnan\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\Krishnan\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\Krishnan\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
--resource:"C:\Krishnan\Working\GitHub\Angular2\Firebolt.Web\src\Firebolt.Web\obj\Debug\netcoreapp1.0\Firebolt.Webdotnet-compile.deps.json",Firebolt.Web.deps.json
-"C:\Krishnan\Working\GitHub\Angular2\Firebolt.Web\src\Firebolt.Web\Program.cs"
-"C:\Krishnan\Working\GitHub\Angular2\Firebolt.Web\src\Firebolt.Web\Startup.cs"
+-resource:"C:\Krishnan\Working\GitHub\Angular2AspNetCore\Angular2AspNetCore\src\Firebolt.Web\obj\Debug\netcoreapp1.0\Firebolt.Webdotnet-compile.deps.json",Firebolt.Web.deps.json
+"C:\Krishnan\Working\GitHub\Angular2AspNetCore\Angular2AspNetCore\src\Firebolt.Web\Program.cs"
+"C:\Krishnan\Working\GitHub\Angular2AspNetCore\Angular2AspNetCore\src\Firebolt.Web\Startup.cs"
