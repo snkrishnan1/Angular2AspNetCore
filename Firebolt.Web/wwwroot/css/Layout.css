@@ -1,4 +1,4 @@
-﻿.row-fluid div {
+﻿/*.row-fluid div {
     height: 200px;
     -webkit-transition: width 0.3s ease, margin 0.3s ease, padding 0.3s ease;
     -moz-transition: width 0.3s ease, margin 0.3s ease, padding 0.3s ease;
@@ -25,4 +25,4 @@
 
 .row-fluid .col-0 + [class*="col"]{
     margin-left: 0;
-}
+}*/

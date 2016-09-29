@@ -10,20 +10,20 @@ $(function () {
         $BODY = $('body'),
         $SIDEBAR_MENU = $('#sidebar-menu'),
         $MENU_TOGGLE = $('#menu_toggle');
-        $SIDEBAR_FOOTER = $('.sidebar-footer');
-        $LEFT_COL = $('.left_col');
+    $SIDEBAR_FOOTER = $('.sidebar-footer');
+    $LEFT_COL = $('.left_col');
 
     $SIDEBAR_MENU.find('li ul').slideUp();
     $SIDEBAR_MENU.find('li').removeClass('active');
 
-    $SIDEBAR_MENU.find('li').on('click', function(ev) {
+    $SIDEBAR_MENU.find('li').on('click', function (ev) {
         var link = $('a', this).attr('href');
 
         // prevent event bubbling on parent menu
         if (link) {
             ev.stopPropagation();
-        } 
-        // execute slidedown if parent menu
+        }
+            // execute slidedown if parent menu
         else {
             if ($(this).is('.active')) {
                 $(this).removeClass('active');
@@ -31,14 +31,14 @@ $(function () {
             } else {
                 $SIDEBAR_MENU.find('li').removeClass('active');
                 $SIDEBAR_MENU.find('li ul').slideUp();
-                
+
                 $(this).addClass('active');
                 $('ul', this).slideDown();
             }
         }
     });
 
-    $MENU_TOGGLE.on('click', function() {
+    $MENU_TOGGLE.on('click', function () {
         if ($BODY.hasClass('nav-md')) {
             $BODY.removeClass('nav-md').addClass('nav-sm');
             $LEFT_COL.removeClass('scroll-view').removeAttr('style');
@@ -67,19 +67,19 @@ $(function () {
 
 // Panel toolbox
 $(function () {
-    $('.collapse-link').on('click', function() {
+    $('.collapse-link').on('click', function () {
         var $BOX_PANEL = $(this).closest('.x_panel'),
             $ICON = $(this).find('i'),
             $BOX_CONTENT = $BOX_PANEL.find('.x_content');
-        
+
         // fix for some div with hardcoded fix class
         if ($BOX_PANEL.attr('style')) {
-            $BOX_CONTENT.slideToggle(200, function(){
+            $BOX_CONTENT.slideToggle(200, function () {
                 $BOX_PANEL.removeAttr('style');
             });
         } else {
-            $BOX_CONTENT.slideToggle(200); 
-            $BOX_PANEL.css('height', 'auto');  
+            $BOX_CONTENT.slideToggle(200);
+            $BOX_PANEL.css('height', 'auto');
         }
 
         $ICON.toggleClass('fa-chevron-up fa-chevron-down');

@@ -9,18 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-const platform_browser_1 = require('@angular/platform-browser');
-const AppComponent_1 = require('./AppComponent');
-const Layout_1 = require('./Layout');
-let AppModule = class AppModule {
+//import { ClientAPIService } from '../Service/ClientAPIService';
+//import { LeftMenu } from './LeftMenu';
+//import { ApplicationListComponent } from './ApplicationListComponent';
+//import { UserProfile } from './UserProfile';
+//import { Constants } from '../Configuration/Constants';
+//import { SessionService } from '../Service/SessionService';
+let Layout = class Layout {
 };
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [AppComponent_1.AppComponent, Layout_1.Layout],
-        bootstrap: [Layout_1.Layout]
+Layout = __decorate([
+    core_1.Component({
+        selector: 'my-app',
+        templateUrl: './HTML/Layouts/Layout.html',
+        // providers: [ClientAPIService, Constants],
+        encapsulation: core_1.ViewEncapsulation.None
     }), 
     __metadata('design:paramtypes', [])
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=AppModule.js.map
+], Layout);
+exports.Layout = Layout;
+//# sourceMappingURL=Layout.js.map
